@@ -5,9 +5,15 @@ host = socket.gethostname() # Get local machine name
 port = 12345                 # Reserve a port for your service.
 
 s.connect((host, port))
-print("Please enter the file you want to send") 
-picture = input() #designates the file you want to send
-outfile = open(picture,'rb')
+fileFound = False
+while(fileFound == False):
+	print("Please enter the file you want to send") 
+	picture = input() #designates the file you want to send
+	try:
+		outfile = open(picture,'rb')
+		fileFound = True
+	except IOError:
+		print("File not found. Please enter correct file name!")
 print('Uploading file...')
 upload = outfile.read(100) #sends the file 100 bytes at a time
 while (upload):
@@ -16,4 +22,4 @@ while (upload):
     upload = outfile.read(100)
 outfile.close()
 print("Upload complete!")
-s.close          
+s.close 
