@@ -5,16 +5,15 @@ host = socket.gethostname() # Get local machine name
 port = 12345                 # Reserve a port for your service.
 
 s.connect((host, port))
-print("Please enter the file you want to send")
-picture = input()
+print("Please enter the file you want to send") 
+picture = input() #designates the file you want to send
 outfile = open(picture,'rb')
-print('Sending...')
-upload = outfile.read(100)
+print('Uploading file...')
+upload = outfile.read(100) #sends the file 100 bytes at a time
 while (upload):
-    print('Sending...')
+    print('Uploading file...') #Lets the user know that the process is...processing
     s.send(upload)
     upload = outfile.read(100)
 outfile.close()
-print("Done Sending")
-#print(s.recv(1024))
+print("Upload complete!")
 s.close          
