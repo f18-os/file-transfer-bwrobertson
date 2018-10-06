@@ -1,7 +1,7 @@
 This is the file transfer lab.
 
-Open the benServer file in the terminal.
-Then in a seperate terminal open the benClient file.
+Open the fileServer file in the terminal.
+Then in a seperate terminal open the fileClient file.
 
 Once this is accomplished, in the client terminal type the name of the file(ex. myfile.txt) you want to send.
 Then go to the server terminal and enter what you would like to save the file(ex. newfile.txt) as.
