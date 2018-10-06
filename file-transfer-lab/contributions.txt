@@ -1,1 +1,16 @@
+Ben Robertson
 
+I received no help from classmates.
+
+I read the following forums for help with this lab.
+
+https://ubuntuforums.org/showthread.php?t=1394838
+https://stackoverflow.com/questions/28840624/forking-server-in-python
+https://stackoverflow.com/questions/27241804/sending-a-file-over-tcp-sockets-in-python
+
+There are two versions of this lab I have uploaded.
+
+echo and ben.
+
+Echo is using Dr. Freudenthal's code.
+Ben is made from scratch from reading forums. I have borrowed some code from the forums but have added pieces to it to improve on what the code was originally designed to do. Basically this code game me a better understanding of what sockets are and how to use them and where to place the fork command to avoid a fork bomb (which I had extensive trouble with before).
