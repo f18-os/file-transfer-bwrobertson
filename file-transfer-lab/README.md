@@ -1,4 +1,4 @@
-This is the file transfer lab pt1.
+This is the file transfer lab.
 
 Open the server file in the terminal.
 Then in a seperate terminal open the client file.
@@ -6,7 +6,8 @@ Then in a seperate terminal open the client file.
 Once this is accomplished, in the client terminal type the name of the file(ex. myfile.txt) you want to send.
 Then go to the server terminal and enter what you would like to save the file(ex. newfile.txt) as.
 
-That's it. The file has been sent and received.
+You must make sure that the type of file you send is the same as the one you receive. I.E. if you send a .txt then save it as a .txt. If you send a .jpg then save it as a .jpg.
 
-EchoServer2 include the forking function. During testing I got it to work but subsequent tests would take a long time as I would have to wait for 
-The server to stop listening before it would work again
+After the file has been sent and received, you can open another client to send and receive a new file.
+
+That's it. The file has been sent and received.
