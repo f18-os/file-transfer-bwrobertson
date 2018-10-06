@@ -8,10 +8,10 @@ s.listen(5)                 # Now wait for client connection.
 picture = ""
 while True:
     client, addr = s.accept()     # Establish connection with client.
-    cpid = os.fork()
-    if(cpid==0):
+    cpid = os.fork()                #this is to identify the child's pid, 
+    if(cpid==0):                    #this also allows you to receive multiple files on the server without have to reopen it
         print("Enter name for new file")
-        picture = input()
+        picture = input()           #designate what you want to save the incoming file as
         infile = open(picture,'wb')
         print('Got connection from', addr)
         print("Incoming file...")
