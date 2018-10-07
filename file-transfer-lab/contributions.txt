@@ -2,15 +2,23 @@ Ben Robertson
 
 I received no help from classmates.
 
-I read the following forums for help with this lab.
+I read the following forums and websites for help with this lab.
 
+
+http://www.tutorialspoint.com/python/python_networking.htm
 https://ubuntuforums.org/showthread.php?t=1394838
+https://realpython.com/python-sockets/
 https://stackoverflow.com/questions/28840624/forking-server-in-python
+https://docs.python.org/3/library/socket.html
+https://docs.python.org/2/howto/sockets.html
 https://stackoverflow.com/questions/27241804/sending-a-file-over-tcp-sockets-in-python
+https://www.geeksforgeeks.org/socket-programming-python/
+https://www.python-course.eu/forking.php
+https://code-maven.com/parallel-processing-using-fork-in-python
 
 There are two versions of this lab I have uploaded.
 
-echo and ben.
+echo and file.
 
 Echo is using Dr. Freudenthal's code.
-Ben is made from scratch from reading forums. I have borrowed some code from the forums but have added pieces to it to improve on what the code was originally designed to do. Basically this code game me a better understanding of what sockets are and how to use them and where to place the fork command to avoid a fork bomb (which I had extensive trouble with before).
+fileClient/Server is made from scratch from reading forums and tutorials. Basically these sites gave me a better understanding of what sockets are and how to use them and where to place the fork command to avoid a fork bomb (which I had extensive trouble with before).
